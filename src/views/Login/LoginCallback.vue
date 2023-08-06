@@ -18,12 +18,7 @@ onMounted(() => {
       // QQ，登录
       try {
         const res = await loginByQQ(id)
-          .then((res) => {
-            loginSuccess(res)
-          })
-          .catch(() => {
-            isNeedBind.value = false
-          })
+        loginSuccess(res)
         console.log('登录成功', res)
       } catch (error) {
         isNeedBind.value = true
