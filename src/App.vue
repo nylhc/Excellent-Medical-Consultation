@@ -1,5 +1,7 @@
 <template>
-  <div>Hello Vue3+TS</div>
+  <div class="main">
+    <router-view></router-view>
+  </div>
 </template>
 
 <script setup lang="ts"></script>
